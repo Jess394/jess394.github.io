@@ -1,74 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Sets the character encoding of the document to UTF-8 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility with IE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport to make the website responsive -->
-    <title>Jess Cadena's Professional website</title> <!-- Sets the title of the webpage -->
-    <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="Style_Professional.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jess Cadena - Computer Science Student & Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Navigation -->
-  <div class="nav">
-    <a class="active" href="index.html">Home</a>
-    <a href="Qualification.html">Resume</a>
-    <a href="Portfolio.html">Portfolio</a>
-    <a href="Service.html">Service</a>
-    <a href="ai.html">A.I.</a>
-     <button class= "nav-button" onclick="toggleStyleSheet()" type="button">Toggle Style</button>
-</div>
-
-<!--Style_professional__________________________________________________________________________________________________________________________-->
- 
-   <!-- Header photo with overlay -->
-   <div class="image-container">
-    <img src="images/HEB_Tour.png" alt="photo of heb internship welcome" class="full-width-image">
-    <div class="overlay">
-        <div class="overlay-content">
-            <div class="overlay-text">Jess Cadena</div>
-            <div class="overlay-textsub">Junior Computer Science Major</div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">Jess Cadena</a>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#leadership" class="nav-link">Leadership</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </nav>
 
-<!-- Skinny maroon rectangle -->
-<div class="maroon-rectangle"></div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Jess Cadena</h1>
+                <p class="hero-subtitle">Computer Science Student & Software Engineer</p>
+                <p class="hero-location">📍 College Station, Texas</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn--primary">View Projects</a>
+                    <a href="#contact" class="btn btn--outline">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- About me section with image -->
-<div class="about-me-container">
-    <div class="about-me">
-        <h1>About Me</h1>
-        <p>My name is Jess Cadena and I am a junior computer science major at Texas A&M University. 
-        I am passionate about all kinds technology and its applications. I have experience as a software engineering
-        intern at H-E-B, where I am learning about software development, Api's, and the retail industry.
-        I am also involved in several studuent organizations at TAMU, Mainly Century Men's Society and Camp Kesem, 
-        which I talk more about under the service section. I am excited to continue learning and growing as a computer scientist and to make a positive impact in the tech industry and hopefully the world.</p>
-        <p><a href="https://www.linkedin.com/in/jesscadena/" download class="home_button">Linkedin</a></p>
-        <p><a href="https://www.instagram.com/jessmcadena/" download class="home_button">Instagram</a></p>
-        <p><a href="https://www.facebook.com/people/Jess-Cadena/pfbid02yVPnUqM2G2s4gFVsYBnrVGbMP7fsJJV2jymtLfm2VWkc4zYkpv7RA6j7RoSMgqqNl/?mibextid=LQQJ4d&rdid=KdT3H5NhlrAWmCxp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FwiD8Qrkfu47J7Bcf%2F%3Fmibextid%3DLQQJ4d" download class="home_button">Facebook</a></p>    
-    </div>
-    <img src="images/headshot.png" alt="Your Image Description" class="about-me-image">
-</div>
-<!--Style_professional__________________________________________________________________________________________________________________________-->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Computer Science student at Texas A&M University with a strong foundation in software engineering and development. Currently maintaining a 3.7 GPA in the College of Engineering, I'm expected to graduate in May 2026.</p>
+                    <p>My experience spans from developing full-stack applications to conducting security research, with hands-on experience in various programming languages and technologies. I'm dedicated to creating innovative solutions and contributing to meaningful projects.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>3.7</h3>
+                        <p>GPA</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>May 2026</h3>
+                        <p>Expected Graduation</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Texas A&M</h3>
+                        <p>University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Software Engineering Intern</h3>
+                        <span class="experience-date">May 2024 - July 2024</span>
+                    </div>
+                    <div class="experience-company">
+                        <strong>H-E-B</strong> • San Antonio, TX
+                    </div>
+                    <ul class="experience-achievements">
+                        <li>Created AWS lambda to provide possible discounts when prompted with a transaction number</li>
+                        <li>Fixed Python install script for Tibco BWCE, saving 2-3 hours of manual install time and ensuring correct installation</li>
+                        <li>Implemented and updated numerous TIBCO Business Works Projects to produce endpoints for clients</li>
+                        <li>Added several Cron jobs to save money by keeping processes running only when needed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!--Style_Art__________________________________________________________________________________________________________________________-->
-<div class="blue-rectangle"></div>
-<div class="green-rectangle"></div>
-<div class="yellow-rectangle"></div>
-<div class="orange-rectangle1"></div>
-<div class="orange-rectangle2"></div>
-<img src="images\Monet_bridge.jpg" alt="Monet Painting" class="monet-image">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">Heroku</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">TIBCO BWCE</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Confluence</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Point of Sales System (POS)</h3>
+                    <p class="project-dates">September 2024 - December 2024</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Heroku</span>
+                    </div>
+                    <p class="project-description">Led a team of 6 students to develop a full-stack POS application using Agile methodology based on Panda Express</p>
+                    <ul class="project-achievements">
+                        <li>Set up a PSQL database with receipt system and inventory tracking</li>
+                        <li>Built accessibility-focused front end including self-checkout kiosk, menu, kitchen order screen, analytics, and cashier kiosk</li>
+                        <li>Deployed publicly on Heroku and released new MVPs after each sprint</li>
+                    </ul>
+                    <a href="#" class="btn btn--secondary">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>XSS-Injection Vulnerability Exploitation</h3>
+                    <p class="project-dates">April 2025</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Security Research</span>
+                        <span class="tech-tag">Web Security</span>
+                        <span class="tech-tag">Ethical Hacking</span>
+                    </div>
+                    <p class="project-description">White hat security research targeting local custom merch companies to identify and report XSS vulnerabilities</p>
+                    <ul class="project-achievements">
+                        <li>Found several zero-day XSS vulnerabilities in merchandise company websites</li>
+                        <li>Demonstrated security risks with proof-of-concept phishing attacks</li>
+                        <li>Ethically reported findings and provided security recommendations</li>
+                    </ul>
+                    <a href="#" class="btn btn--secondary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Header Section -->
-<div class="header-section">
-    <h1>Jess Cadena</h1>
-    <h2>Junior Computer Science Major</h2>
-</div>
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership">
+        <div class="container">
+            <h2 class="section-title">Leadership</h2>
+            <div class="leadership-grid">
+                <div class="leadership-card">
+                    <h3>Chair</h3>
+                    <div class="leadership-org">Fish Camp</div>
+                    <div class="leadership-location">College Station, Texas</div>
+                    <div class="leadership-dates">November 2024 - Present</div>
+                    <p class="leadership-description">Selected to lead Freshman Orientation Camp, overseeing 20+ counselors and 100+ incoming Freshmen</p>
+                    <ul class="leadership-responsibilities">
+                        <li>Facilitate biweekly leadership training sessions over six months</li>
+                        <li>Manage administrative tasks and implement team-building strategies</li>
+                        <li>Foster a cohesive, high-performance leadership team</li>
+                    </ul>
+                </div>
+                <div class="leadership-card">
+                    <h3>Operations Coordinator</h3>
+                    <div class="leadership-org">Camp Kesem</div>
+                    <div class="leadership-location">College Station, Texas</div>
+                    <div class="leadership-dates">August 2024 - Present</div>
+                    <p class="leadership-description">Summer camp coordinator for children whose families are affected by cancer</p>
+                    <ul class="leadership-responsibilities">
+                        <li>Plan daily activity rotations, campsite selection, and transportation coordination</li>
+                        <li>Lead a camp of 40+ counselors and 100+ kids through week-long camp</li>
+                        <li>Fundraise $500 annually and participate in events raising $60,000+ for Kesem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!--style_Art_________________________________________________________________________________________________________________________________________________________-->
-<script src="functions.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong> <a href="mailto:jessmcadena@gmail.com">jessmcadena@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> <a href="tel:713-829-7157">713-829-7157</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Location:</strong> College Station, TX
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-link">LinkedIn</a>
+                        <a href="#" target="_blank" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jess Cadena. Made with ❤️ by Jess Cadena</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
